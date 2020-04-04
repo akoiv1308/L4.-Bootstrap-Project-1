@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/26faa28cfb.js" crossorigin="anonymous"></script>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet"> 
+    <!-- Navbar -->
+    <nav class="navbar sticky-top navbar-light bg-light">
+      <a class="navbar-brand logo" href="#"><i class="fas fa-bus-alt"></i> MTA</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+       </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button type="button" class="btn btn-dark">Search</button>
+        </form>
+      </div>
+    </nav>
+
+  </head>
+  <body>
+    <!-- JS, JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <!--Can also use hackerthemes.com to create a jumbotron-->
+    <header class="d-flex align-items-center">
+    <div class="jumbotr"container">
+      <h1 class="display-4">New York City Subway</h1>
+      <p class="lead">Recharge Shelter focuses on helping those who have been displaced transition into permanent housing. We have two unique services aimed at helping the homeless feel welcomed and loved, aimed at helping create a smooth and easy transition into permanent housing.</p>
+      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-secondary active">
+          <input type="radio" name="options" id="option1" autocomplete="off" checked> About
+        </label>
+        <label class="btn btn-secondary">
+          <input type="radio" name="options" id="option2" autocomplete="off"> Schedule
+        </label>
+        <label class="btn btn-secondary">
+          <input type="radio" name="options" id="option3" autocomplete="off"><a href="http://web.mta.info/maps/submap.html"></a>Contact
+        </label>
+      </div>
+    </div>
+    </header>
+    <section class = "services container">
+      <h3 align = "center">Services</h3>
+      <p align = "center">Information about MTA</p>
+      <hr></hr>
+      <div class="row">
+        <div class="col-md-6 service">
+          <i class="far fa-edit"></i>
+          <span><strong>Web Design</strong></span>
+          <p align = "center">We offer web design services to businesses who are interested in 
+          creating a digital presence.</p>
+        </div>
+        <div class="col-md-6 service">
+          <i class="fas fa-phone"></i>
+          <span><strong>Mobile Apps</strong></span>
+          <p align = "center">We create mobile applications for companies who are interested in 
+          expanding their product to reach a larger audience.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 service">
+          <i class="fas fa-table"></i>
+          <span><strong>Database</strong></span>
+          <p align = "center">We offer database services to businesses who need digital storage space for their applications.</p>
+        </div>
+        <div class="col-md-6 service">
+          <i class="fas fa-university"></i>
+          <span><strong>Consulting</strong></span>
+          <p align = "center">We offer consulting services to businesses who want to expand their bussiness using technology.</p>
+          <div class="donation-container">
+            
+            <div class="donation-box">
+	            <div class="title">Donation Information</div>
+	            
+	            <div class="fields">
+		            <input type="text" id="firstName" placeholder="First Name"> </input>
+		            <input type="text" id="lastName" placeholder="Last Name"> </input>
+		            <input type="text" id="email" placeholder="Email"> </input>
+	            </div>
+	            
+	            <div class="amount">
+		            <div class="button">$30</div>
+		            <div class="button">$50</div>
+		            <div class="button">$100</div>
+		            <div class="button">$<input type="text" class="set-amount" placeholder=""> </input></div>
+	            </div>
+	            
+	            <div class="switch">
+					<input type="radio" class="switch-input" name="view" value="One-Time" id="one-time" checked="">
+					<label for="one-time" class="switch-label switch-label-off">One-Time</label>
+					<input type="radio" class="switch-input" name="view" value="Monthly" id="monthly">
+					<label for="monthly" class="switch-label switch-label-on">Monthly</label>
+					<span class="switch-selection"></span>
+			    </div>
+			    
+			    <div class="checkboxes">
+					<input type="checkbox" id="receipt" class="checkbox" />
+					<label for="receipt">Email Me A Receipt</label>
+					<br />
+					<input type="checkbox" id="anon" class="checkbox" />
+					<label for="anon">Give Anonymously</label>
+					<br />
+					<input type="checkbox" id="list" class="checkbox" />
+					<label for="list">Add Me To Email List</label>
+			    </div>
+			    
+			    <div class="confirm">
+				    
+			    </div>
+	            
+	            <div class="donate-button"><i class="fa fa-credit-card"></i> Donate Now</div>
+            </div>
+            
+        </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://raw.githubusercontent.com/jerryluk/jquery.autogrow/master/jquery.autogrow-min.js"></script>
+        </div>
+      </div>
+    </section>
+
+    <div class="parallax"></div>
+
+    <!-- Team Section -->
+    <section id="team" class="team container">
+      <h1>Team</h1>
+      <div class="row">
+           <div class="col-md-3">
+             <img src="http://shadified.com/wp-content/uploads/2018/01/mens-1.png" style = "height: 150px; width: 150px; border-radius: 10%; margin-left: 35px;"></img>
+             <h3 style = "margin-left: 60px;margin-top: 15px;">Jane Doe</h3>
+             <h5 class = "t">CEO</h5>
+             <p class = "par">Chapter too parties its letters nor. Cheerful but whatever ladyship disposed yet judgment. Lasted answer oppose to ye months no esteem.</p>
+            </div>
+            <div class="col-md-3">
+             <img src="http://www.avyota.com/wp-content/uploads/2013/05/photodune-658305-portrait-of-a-good-looking-african-american-business-man-s7-300x247.png"style = "height: 150px; width: 150px;border-radius: 10%;margin-left: 35px;"></img>
+             <h3 style = "margin-left: 60px;margin-top: 15px;">Jane Doe</h3>
+             <h5 class = "t">CEO</h5>
+             <p class = "par">Attended no do thoughts me on dissuade scarcely. Own are pretty spring suffer old denote his. By proposal speedily mr striking am.</p>
+            </div>
+            <div class="col-md-3">
+             <img src="https://www.medtechhealthcare.com/wordpress/wp-content/uploads/2015/03/smile.png"style = "height: 150px; width: 150px;border-radius: 10%;margin-left: 35px;"></img>
+             <h3 style = "margin-left: 60px;margin-top: 15px;">Jane Doe</h3>
+             <h5 class = "t">CEO</h5>
+             <p class = "par">Luckily friends do ashamed to do suppose. Tried meant mr smile so. Exquisite behaviour as to middleton perfectly.</p>
+             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="92TZKHPM5****">
+<input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+</form>
+            </div>
+            <div class="col-md-3">
+             <img src="http://shadified.com/wp-content/uploads/2018/01/mens-1.png"style = "height: 150px; width: 150px;border-radius: 10%;margin-left: 35px;"></img>
+             <h3 style = "margin-left: 65px;margin-top: 15px;">Jane Doe</h3>
+             <h5 class = "t">CEO</h5>
+             <p class = "par">The him father parish looked has sooner. Attachment frequently terminated son. You greater nay use prudent placing.</p>
+             <title>Donate With PayPal</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="css/flexslider.css" type="text/css">
+</head>
+<body>
+<div id = "main">
+<h1>Donate With PayPal</h1>
+<div id = "container">
+<h2>Save the Children Needs Your Support To Bring Back Smiles</h2>
+<hr/>
+<!-- Place somewhere in the <body> of your page -->
+<div class="flexslider">
+<!-- image slider start here -->
+<ul class="slides">
+<li>
+<div class="box-shadow-preview">
+<img src="images/1.jpg"/>
+</div>
+</li>
+<li>
+<div class="box-shadow-preview">
+<img src="images/2.jpg" />
+</div>
+</li>
+<li>
+<div class="box-shadow-preview">
+<img src="images/3.jpg" />
+</div>
+</li>
+<li>
+<div class="box-shadow-preview">
+<img src="images/4.jpg" />
+</div>
+</li>
+<li>
+<div class="box-shadow-preview">
+<img src="images/5.jpg" />
+</div>
+</li>
+</ul>
+</div>
+<div class="donate">
+<!-- 1st charity container -->
+<div class="charity">
+<a href=""><img src="images/logo1.PNG"></a>
+<form action="process.php" method="POST">
+<input type="hidden" name="id" value="<?php echo base64_encode(1); ?>">
+<input type="submit" value="Donate $25" name="submit">
+</form>
+<p>Or give <a href="#" onclick="show('<?php echo base64_encode(1); ?>');" class="show2">any amount</a>.</p>
+</div>
+<!-- 2nd charity container -->
+<div class="charity">
+<a href=""><img src="images/logo2.PNG"></a>
+<form action="process.php" method="POST">
+<input type="hidden" name="id" value="<?php echo base64_encode(2); ?>">
+<input type="submit" value="Donate $25" name="submit">
+</form>
+<p>Or give <a href="#" onclick="show('<?php echo base64_encode(2); ?>');">any amount</a>.</p>
+</div>
+<!-- 3rd charity container -->
+<div class="charity">
+<a href=""><img src="images/logo3.PNG"></a>
+<form action="process.php" method="POST">
+<input type="hidden" name="id" value="<?php echo base64_encode(3); ?>">
+<input type="submit" value="Donate $25" name="submit">
+</form>
+<p>Or give <a href="#" onclick="show('<?php echo base64_encode(3); ?>');">any amount</a>.</p>
+</div>
+<!-- 4th charity container -->
+<div class="charity">
+<a href=""><img src="images/logo4.PNG"></a>
+<form action="process.php" method="POST">
+<input type="hidden" name="id" value="<?php echo base64_encode(4); ?>">
+<input type="submit" value="Donate $25" name="submit">
+</form>
+<p>Or give <a href="#" onclick="show('<?php echo base64_encode(4); ?>');">any amount</a>.</p>
+</div>
+</div>
+</div>
+<img id="paypal_logo" style="margin-left: 722px;" src="images/secure-paypal-logo.jpg">
+</div>
+<div id="pop2" class="simplePopup">
+<h3>Donate and start helping today!</h3>
+<form action="process.php" method="POST">
+<img src="images/donate.jpg">
+<br/>
+<b>$</b><input type="hidden" name="id" id='charity_id' value=''>
+<input type="number" value="" name="amount" required="required" step=".1">
+<input type="submit" value="Donate Now" name="submit">
+</form>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<!-- code for sliders -->
+<script type="text/javascript" charset="utf-8">
+$(window).load(function() {
+$('.flexslider').flexslider();
+});</script>
+<script src="js/jquery.simplePopup.js" type="text/javascript"></script>
+<!-- call popup -->
+<script type="text/javascript">
+function show(id) {
+$('#charity_id').val(id);
+$('.box-shadow-preview').css("opacity", "0.1");
+$('#pop2').simplePopup();
+}
+</script>
+            </div>
+      </div>
+    </section>
+
+    <!-- <div style="height:100px;opacity: 0.5;background-color:transparent;font-size:18px">
+      Scroll Up and Down this page to see the parallax scrolling effect.
+    </div> -->
+
+    <div class="parallax"></div>
+
+   <section class="contact container">
+       <h1 style = "color:#F0F8FF; text-align: center; font-family: 'Bangers', cursive;margin-bottom: 50px">Contact</h1>
+       <div class="row">
+         <div class = "col-sm-2">
+             <div class="mapouter"><div class="gmap_canvas"><iframe width="500" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=mta&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/best-wordpress-themes/">embedgooglemap.net</a></div><style>.mapouter{position:relative;text-align:right;height:50px;width:50px;}.gmap_canvas {overflow:hidden;background:none!important;height:250px;width:250px;}</style></div>
+          </div>
+           <div class="col-md-6">
+               <div class="input-group input-group-lg">
+                   <div class="input-group-prepend fix">
+                       <i class="far fa-user" style = "color:white padding: 10px 10px; background-color:#F0F8FF; border-radius: 5%"></i>
+                   </div>
+                   <input type="text" class="form-control pad">
+               </div>
+               <div class="input-group input-group-lg">
+                   <div class="input-group-prepend fix">
+                       <i class="fas fa-envelope" style = "color:white padding: 10px 10px; background-color:#F0F8FF; border-radius: 5%"></i>
+                   </div>
+                   <input type="text" class="form-control pad">
+               </div>
+               <div class="input-group input-group-lg">
+                   <div class="input-group-prepend fix">
+                       <i class="fas fa-phone" style = "color:white padding: 10px 10px; background-color:#F0F8FF; border-radius: 5%"></i>
+                   </div>
+                   <input type="text" class="form-control pad">
+               </div>
+           </div>
+
+           <div class="col-lg-4 col-md-4">
+               <div class="input-group">
+                   <textarea cols="80" rows="6" class="form-control"></textarea>
+               </div>
+               <button class="btn btn-lg">Submit Your Message</button>
+           </div>
+   </section>
+
+   <footer>
+     <div class = "row">
+       <div class = "col-md-4">
+         <h5 style = "text-align:center;color:#F0F8FF; text-align: center; font-family: 'Bangers', cursive;margin-bottom: 50px">Contact</h5>
+         <i class="fas fa-home op"></i>
+         <span> Address </span>
+         <br>
+         <i class="far fa-envelope-open op"></i>
+         <span> Email </span>
+         <br>
+         <i class="fas fa-phone op"></i>
+         <span> Phone Number </span>
+         <br>
+         <i class="fab fa-safari op"></i>
+         <span> Website </span>
+         <br>
+        </div>
+        <div class = "col-md-4">
+          <h5 style = "text-align:center;color:#F0F8FF; text-align: center; font-family: 'Bangers', cursive;margin-bottom: 50px">About Us</h5>
+          <i class="far fa-hand-point-right op"></i>
+          <span> About Us </span>
+          <br>
+          <i class="far fa-hand-point-right op"></i>
+          <span> Privacy </span>
+          <br>
+          <i class="far fa-hand-point-right op"></i>
+          <span> Terms and Conditions </span>
+          <br>
+        </div>
+        <div class = "col-md-4">
+          <h5 style = "text-align:center;color:#F0F8FF; text-align: center; font-family: 'Bangers', cursive;margin-bottom: 50px">Social Media</h5>
+          <i class="fab fa-facebook-f op"></i>
+          <i class="fab fa-instagram op"></i>
+          <i class="fab fa-twitter op"></i>
+          <button class="btn btn-dark" onclick="document.getElementById('id01').style.display='block'" style="width:auto;margin-left:300px">Login</button>
+        <div id="id01" class="modal">
+          <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          </div>
+
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>
